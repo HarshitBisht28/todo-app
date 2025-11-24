@@ -7,10 +7,11 @@
     <title>Todo App</title>
 </head>
 <body>
+    <div class="container">
     <h1>TO DO LIST</h1>
     <div>
         <label for="Todo">Todo:</label>
-        <input type="text" id="myInput" placeholder="Enter your todo">
+        <input type="text" id="myInput" placeholder="What needs to be done?">
     </div>
 
     <div id="myList">
@@ -21,11 +22,13 @@
             </li>
         </ul>
     </div>
-
+<div class="btnRow">
     <button id="showAll">All</button>
     <button id="showActive">Active</button>
     <button id="showCompleted">Completed</button>
-
+    <button id="clearCompleted">Clear Completed</button>
+    </div>
+</div>
     <script src="todo.js"></script>
 </body>
 </html>

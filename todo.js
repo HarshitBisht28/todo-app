@@ -10,6 +10,21 @@ function appendI() {
     clone.style.display = "flex";
     clone.querySelector("span").textContent = input.value;
 
+    const checkbox = clone.querySelector("input[type='checkbox']")
+
+    checkbox.addEventListener("change", () =>{
+        if(checkbox.checked){
+            clone.querySelector("span").style.textDecoration = "line-through";
+            clone.querySelector("span").style.color ="#aaa";
+        }
+        else{
+             clone.querySelector("span").style.textDecoration ="none";
+            clone.querySelector("span").style.color = "#000";
+
+        }
+    })
+   
+
     ul.appendChild(clone);
     input.value = "";
 }
